@@ -29,11 +29,11 @@ function showDate(){
 	var divDate = document.getElementById("getDate");
 	var date = new Date();
 
-	var d = date.getDay();
+	var d = date.getDate(); //ermittelt den Tag
 	var m = date.getMonth();
 	var y = date.getFullYear();
 
-
+	m = m +1; //Monatszählung beginnt bei 0
 	divDate.innerHTML = d + "." + m + "." + y;
 	var t = setTimeout(showTime, 500);
 }
