@@ -6,7 +6,7 @@ body{
 }
 
 
-#getTime, #getDate, #showWeather{
+#getTime, #getDate, #getWeather{
 	color: white;
 	font-size: 50px;
 }

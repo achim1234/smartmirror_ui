@@ -47,8 +47,14 @@ function weatherResponseFromOpenweather(){
         //var weatherData = request.responseText;
         //alert(request.responseText.city.name);
         //var cityName = JSON.parse(weatherData);
-        alert(JSON.stringify(request.responseText));
-        alert(JSON.parse(request.responseText));
+        //alert(JSON.stringify(request.responseText));
+        //alert(JSON.parse(request.responseText));
+
+         var data = JSON.parse(request); //wandelt JSON in ein javascript objekt
+         //data = "hahhahaha";
+         document.getElementById("getWeather").innerHTML = data.city.id;
+
+
         //alert(cityName);
 
        
